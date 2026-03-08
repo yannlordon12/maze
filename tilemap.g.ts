@@ -26,8 +26,8 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `, [myTiles.transparency16,sprites.dungeon.greenOuterNorthWest,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorthEast,sprites.dungeon.greenOuterEast0,sprites.dungeon.greenOuterSouthWest,sprites.dungeon.greenOuterSouth0,sprites.dungeon.greenOuterSouth1,sprites.dungeon.greenOuterSouthEast,sprites.dungeon.greenOuterWest1,sprites.dungeon.greenOuterWest0,sprites.dungeon.floorDark2,sprites.dungeon.greenOuterNorth1,sprites.dungeon.greenOuterEast1,sprites.dungeon.floorDark1,sprites.dungeon.floorDark5,sprites.dungeon.greenInnerNorthEast,sprites.dungeon.purpleInnerNorthWest,sprites.dungeon.greenOuterWest2,sprites.dungeon.stairWest,sprites.dungeon.stairEast,sprites.dungeon.stairLarge,sprites.dungeon.greenInnerSouthWest,sprites.dungeon.greenOuterEast2,sprites.dungeon.greenOuterNorth2,sprites.dungeon.greenOuterSouth2,sprites.dungeon.greenInnerNorthWest,sprites.dungeon.greenInnerSouthEast,myTiles.transparency16], TileScale.Sixteen);
-            case "level_1":
-            case "level_1":return tiles.createTilemap(hex`14001400020101010101010101010101010101010101010d030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a020101010101010c0101010d01010e030a0a0a0a03020101010d0a0a0a0a0a0e0a130e0302010c010503150a160e0a0a0a0a0a0e0a0a0e10030a0a0a0a030a0a0a0401010d01010e0a0a0e0a030a0a0a0a0b0a0a0a0a0a0a0e0a0a0e0a0a0e0a030a0a0a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0607090a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0709030a0a030a0a0a0a0a0a0b0a0a0b0a0a0e0a0a03030a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0a03030a0a03170f0a0a0a180e0a0a0e0a0a0e0a0a03030a0a060707070707070812120e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a0306070707070707070707070707080a0a0e0a0a030a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a0b0a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a060707070707070707070707070707070714`, img`
+            case "level_2":
+            case "niveau1":return tiles.createTilemap(hex`14001400020101010101010101010101010101010101010d030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a020101010101010c0101010d01010e030a0a0a0a03020101010d0a0a0a0a0a0e0a130e0302010c010503150a160e0a0a0a0a0a0e0a0a0e10030a0a0a0a030a0a0a0401010d01010e0a0a0e0a030a0a0a0a0b0a0a0a0a0a0a0e0a0a0e0a0a0e0a030a0a0a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0607090a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0709030a0a030a0a0a0a0a0a0b0a0a0b0a0a0e0a0a03030a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0a03030a0a03170f0a0a0a180e0a0a0e0a0a0e0a0a03030a0a060707070707070812120e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a0306070707070707070707070707080a0a0e0a0a030a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a0b0a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a060707070707070707070707070707070714`, img`
 22222222222222222222
 2..................2
 2..................2
@@ -48,7 +48,191 @@ namespace myTiles {
 ..2.............2..2
 ................2..2
 ..22222222222222222.
-`, [myTiles.transparency16,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorthWest,sprites.dungeon.greenOuterWest0,sprites.dungeon.greenInnerSouthWest,sprites.dungeon.greenInnerSouthEast,sprites.dungeon.greenOuterSouthEast,sprites.dungeon.greenOuterSouth1,sprites.dungeon.greenOuterSouthWest,sprites.dungeon.greenInnerNorthEast,sprites.dungeon.floorLight0,sprites.dungeon.stairWest,sprites.dungeon.stairNorth,sprites.dungeon.greenOuterNorthEast,sprites.dungeon.greenOuterEast0,sprites.dungeon.floorLight4,sprites.dungeon.stairLarge,sprites.dungeon.greenOuterEast1,sprites.dungeon.greenOuterSouth0,sprites.dungeon.chestClosed,sprites.dungeon.darkGroundSouthWest1,sprites.jewels.jewel3,sprites.jewels.jewel4,sprites.jewels.jewel5,sprites.jewels.jewel2], TileScale.Sixteen);
+`, [myTiles.tile1,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorthWest,sprites.dungeon.greenOuterWest0,sprites.dungeon.greenInnerSouthWest,sprites.dungeon.greenInnerSouthEast,sprites.dungeon.greenOuterSouthEast,sprites.dungeon.greenOuterSouth1,sprites.dungeon.greenOuterSouthWest,sprites.dungeon.greenInnerNorthEast,sprites.dungeon.floorLight0,sprites.dungeon.stairWest,sprites.dungeon.stairNorth,sprites.dungeon.greenOuterNorthEast,sprites.dungeon.greenOuterEast0,sprites.dungeon.floorLight4,sprites.dungeon.stairLarge,sprites.dungeon.greenOuterEast1,sprites.dungeon.greenOuterSouth0,sprites.dungeon.chestClosed,sprites.dungeon.darkGroundSouthWest1,sprites.jewels.jewel3,sprites.jewels.jewel4,sprites.jewels.jewel5,sprites.jewels.jewel2], TileScale.Sixteen);
+            case "level_3":
+            case "niveau2":return tiles.createTilemap(hex`14001400020101010101010101010101010101010101010d030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a020101010101010c0101010d01010e030a0a0a0a03020101010d0a0a0a0a0a0e0a130e0302010c010503150a160e0a0a0a0a0a0e0a0a0e10030a0a0a0a030a0a0a0401010d01010e0a0a0e0a030a0a0a0a0b0a0a0a0a0a0a0e0a0a0e0a0a0e0a030a0a0a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0607090a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0709030a0a030a0a0a0a0a0a0b0a0a0b0a0a0e0a0a03030a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0a03030a0a03170f0a0a0a180e0a0a0e0a0a0e0a0a03030a0a060707070707070812120e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a0306070707070707070707070707080a0a0e0a0a030a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a0b0a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a060707070707070707070707070707070714`, img`
+22222222222222222222
+2..................2
+2..................2
+2....2222222.2222222
+2....222222.....2..2
+222.222...2.....2..2
+.2....2...2222222..2
+.2...........2..2..2
+.2....2......2..2..2
+.222..2......2..2..2
+.222..2............2
+..22..2......2..2..2
+..22..2......2..2..2
+..22..22222222222..2
+..22............2..2
+..22............2..2
+..222222222222222..2
+..2.............2..2
+................2..2
+..22222222222222222.
+`, [myTiles.tile1,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorthWest,sprites.dungeon.greenOuterWest0,sprites.dungeon.greenInnerSouthWest,sprites.dungeon.greenInnerSouthEast,sprites.dungeon.greenOuterSouthEast,sprites.dungeon.greenOuterSouth1,sprites.dungeon.greenOuterSouthWest,sprites.dungeon.greenInnerNorthEast,sprites.dungeon.floorLight0,sprites.dungeon.stairWest,sprites.dungeon.stairNorth,sprites.dungeon.greenOuterNorthEast,sprites.dungeon.greenOuterEast0,sprites.dungeon.floorLight4,sprites.dungeon.stairLarge,sprites.dungeon.greenOuterEast1,sprites.dungeon.greenOuterSouth0,sprites.dungeon.chestClosed,sprites.dungeon.darkGroundSouthWest1,sprites.jewels.jewel3,sprites.jewels.jewel4,sprites.jewels.jewel5,sprites.jewels.jewel2], TileScale.Sixteen);
+            case "level_4":
+            case "niveau3":return tiles.createTilemap(hex`14001400020101010101010101010101010101010101010d030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a020101010101010c0101010d01010e030a0a0a0a03020101010d0a0a0a0a0a0e0a130e0302010c010503150a160e0a0a0a0a0a0e0a0a0e10030a0a0a0a030a0a0a0401010d01010e0a0a0e0a030a0a0a0a0b0a0a0a0a0a0a0e0a0a0e0a0a0e0a030a0a0a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0607090a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0709030a0a030a0a0a0a0a0a0b0a0a0b0a0a0e0a0a03030a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0a03030a0a03170f0a0a0a180e0a0a0e0a0a0e0a0a03030a0a060707070707070812120e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a0306070707070707070707070707080a0a0e0a0a030a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a0b0a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a060707070707070707070707070707070714`, img`
+22222222222222222222
+2..................2
+2..................2
+2....2222222.2222222
+2....222222.....2..2
+222.222...2.....2..2
+.2....2...2222222..2
+.2...........2..2..2
+.2....2......2..2..2
+.222..2......2..2..2
+.222..2............2
+..22..2......2..2..2
+..22..2......2..2..2
+..22..22222222222..2
+..22............2..2
+..22............2..2
+..222222222222222..2
+..2.............2..2
+................2..2
+..22222222222222222.
+`, [myTiles.tile1,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorthWest,sprites.dungeon.greenOuterWest0,sprites.dungeon.greenInnerSouthWest,sprites.dungeon.greenInnerSouthEast,sprites.dungeon.greenOuterSouthEast,sprites.dungeon.greenOuterSouth1,sprites.dungeon.greenOuterSouthWest,sprites.dungeon.greenInnerNorthEast,sprites.dungeon.floorLight0,sprites.dungeon.stairWest,sprites.dungeon.stairNorth,sprites.dungeon.greenOuterNorthEast,sprites.dungeon.greenOuterEast0,sprites.dungeon.floorLight4,sprites.dungeon.stairLarge,sprites.dungeon.greenOuterEast1,sprites.dungeon.greenOuterSouth0,sprites.dungeon.chestClosed,sprites.dungeon.darkGroundSouthWest1,sprites.jewels.jewel3,sprites.jewels.jewel4,sprites.jewels.jewel5,sprites.jewels.jewel2], TileScale.Sixteen);
+            case "level_5":
+            case "niveau4":return tiles.createTilemap(hex`14001400020101010101010101010101010101010101010d030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a020101010101010c0101010d01010e030a0a0a0a03020101010d0a0a0a0a0a0e0a130e0302010c010503150a160e0a0a0a0a0a0e0a0a0e10030a0a0a0a030a0a0a0401010d01010e0a0a0e0a030a0a0a0a0b0a0a0a0a0a0a0e0a0a0e0a0a0e0a030a0a0a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0607090a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0709030a0a030a0a0a0a0a0a0b0a0a0b0a0a0e0a0a03030a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0a03030a0a03170f0a0a0a180e0a0a0e0a0a0e0a0a03030a0a060707070707070812120e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a0306070707070707070707070707080a0a0e0a0a030a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a0b0a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a060707070707070707070707070707070714`, img`
+22222222222222222222
+2..................2
+2..................2
+2....2222222.2222222
+2....222222.....2..2
+222.222...2.....2..2
+.2....2...2222222..2
+.2...........2..2..2
+.2....2......2..2..2
+.222..2......2..2..2
+.222..2............2
+..22..2......2..2..2
+..22..2......2..2..2
+..22..22222222222..2
+..22............2..2
+..22............2..2
+..222222222222222..2
+..2.............2..2
+................2..2
+..22222222222222222.
+`, [myTiles.tile1,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorthWest,sprites.dungeon.greenOuterWest0,sprites.dungeon.greenInnerSouthWest,sprites.dungeon.greenInnerSouthEast,sprites.dungeon.greenOuterSouthEast,sprites.dungeon.greenOuterSouth1,sprites.dungeon.greenOuterSouthWest,sprites.dungeon.greenInnerNorthEast,sprites.dungeon.floorLight0,sprites.dungeon.stairWest,sprites.dungeon.stairNorth,sprites.dungeon.greenOuterNorthEast,sprites.dungeon.greenOuterEast0,sprites.dungeon.floorLight4,sprites.dungeon.stairLarge,sprites.dungeon.greenOuterEast1,sprites.dungeon.greenOuterSouth0,sprites.dungeon.chestClosed,sprites.dungeon.darkGroundSouthWest1,sprites.jewels.jewel3,sprites.jewels.jewel4,sprites.jewels.jewel5,sprites.jewels.jewel2], TileScale.Sixteen);
+            case "level_6":
+            case "niveau5":return tiles.createTilemap(hex`14001400020101010101010101010101010101010101010d030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a020101010101010c0101010d01010e030a0a0a0a03020101010d0a0a0a0a0a0e0a130e0302010c010503150a160e0a0a0a0a0a0e0a0a0e10030a0a0a0a030a0a0a0401010d01010e0a0a0e0a030a0a0a0a0b0a0a0a0a0a0a0e0a0a0e0a0a0e0a030a0a0a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0607090a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0709030a0a030a0a0a0a0a0a0b0a0a0b0a0a0e0a0a03030a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0a03030a0a03170f0a0a0a180e0a0a0e0a0a0e0a0a03030a0a060707070707070812120e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a0306070707070707070707070707080a0a0e0a0a030a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a0b0a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a060707070707070707070707070707070714`, img`
+22222222222222222222
+2..................2
+2..................2
+2....2222222.2222222
+2....222222.....2..2
+222.222...2.....2..2
+.2....2...2222222..2
+.2...........2..2..2
+.2....2......2..2..2
+.222..2......2..2..2
+.222..2............2
+..22..2......2..2..2
+..22..2......2..2..2
+..22..22222222222..2
+..22............2..2
+..22............2..2
+..222222222222222..2
+..2.............2..2
+................2..2
+..22222222222222222.
+`, [myTiles.tile1,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorthWest,sprites.dungeon.greenOuterWest0,sprites.dungeon.greenInnerSouthWest,sprites.dungeon.greenInnerSouthEast,sprites.dungeon.greenOuterSouthEast,sprites.dungeon.greenOuterSouth1,sprites.dungeon.greenOuterSouthWest,sprites.dungeon.greenInnerNorthEast,sprites.dungeon.floorLight0,sprites.dungeon.stairWest,sprites.dungeon.stairNorth,sprites.dungeon.greenOuterNorthEast,sprites.dungeon.greenOuterEast0,sprites.dungeon.floorLight4,sprites.dungeon.stairLarge,sprites.dungeon.greenOuterEast1,sprites.dungeon.greenOuterSouth0,sprites.dungeon.chestClosed,sprites.dungeon.darkGroundSouthWest1,sprites.jewels.jewel3,sprites.jewels.jewel4,sprites.jewels.jewel5,sprites.jewels.jewel2], TileScale.Sixteen);
+            case "level_7":
+            case "niveau6":return tiles.createTilemap(hex`14001400020101010101010101010101010101010101010d030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a020101010101010c0101010d01010e030a0a0a0a03020101010d0a0a0a0a0a0e0a130e0302010c010503150a160e0a0a0a0a0a0e0a0a0e10030a0a0a0a030a0a0a0401010d01010e0a0a0e0a030a0a0a0a0b0a0a0a0a0a0a0e0a0a0e0a0a0e0a030a0a0a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0607090a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0709030a0a030a0a0a0a0a0a0b0a0a0b0a0a0e0a0a03030a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0a03030a0a03170f0a0a0a180e0a0a0e0a0a0e0a0a03030a0a060707070707070812120e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a0306070707070707070707070707080a0a0e0a0a030a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a0b0a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a060707070707070707070707070707070714`, img`
+22222222222222222222
+2..................2
+2..................2
+2....2222222.2222222
+2....222222.....2..2
+222.222...2.....2..2
+.2....2...2222222..2
+.2...........2..2..2
+.2....2......2..2..2
+.222..2......2..2..2
+.222..2............2
+..22..2......2..2..2
+..22..2......2..2..2
+..22..22222222222..2
+..22............2..2
+..22............2..2
+..222222222222222..2
+..2.............2..2
+................2..2
+..22222222222222222.
+`, [myTiles.tile1,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorthWest,sprites.dungeon.greenOuterWest0,sprites.dungeon.greenInnerSouthWest,sprites.dungeon.greenInnerSouthEast,sprites.dungeon.greenOuterSouthEast,sprites.dungeon.greenOuterSouth1,sprites.dungeon.greenOuterSouthWest,sprites.dungeon.greenInnerNorthEast,sprites.dungeon.floorLight0,sprites.dungeon.stairWest,sprites.dungeon.stairNorth,sprites.dungeon.greenOuterNorthEast,sprites.dungeon.greenOuterEast0,sprites.dungeon.floorLight4,sprites.dungeon.stairLarge,sprites.dungeon.greenOuterEast1,sprites.dungeon.greenOuterSouth0,sprites.dungeon.chestClosed,sprites.dungeon.darkGroundSouthWest1,sprites.jewels.jewel3,sprites.jewels.jewel4,sprites.jewels.jewel5,sprites.jewels.jewel2], TileScale.Sixteen);
+            case "level_8":
+            case "niveau7":return tiles.createTilemap(hex`14001400020101010101010101010101010101010101010d030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a020101010101010c0101010d01010e030a0a0a0a03020101010d0a0a0a0a0a0e0a130e0302010c010503150a160e0a0a0a0a0a0e0a0a0e10030a0a0a0a030a0a0a0401010d01010e0a0a0e0a030a0a0a0a0b0a0a0a0a0a0a0e0a0a0e0a0a0e0a030a0a0a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0607090a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0709030a0a030a0a0a0a0a0a0b0a0a0b0a0a0e0a0a03030a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0a03030a0a03170f0a0a0a180e0a0a0e0a0a0e0a0a03030a0a060707070707070812120e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a0306070707070707070707070707080a0a0e0a0a030a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a0b0a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a060707070707070707070707070707070714`, img`
+22222222222222222222
+2..................2
+2..................2
+2....2222222.2222222
+2....222222.....2..2
+222.222...2.....2..2
+.2....2...2222222..2
+.2...........2..2..2
+.2....2......2..2..2
+.222..2......2..2..2
+.222..2............2
+..22..2......2..2..2
+..22..2......2..2..2
+..22..22222222222..2
+..22............2..2
+..22............2..2
+..222222222222222..2
+..2.............2..2
+................2..2
+..22222222222222222.
+`, [myTiles.tile1,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorthWest,sprites.dungeon.greenOuterWest0,sprites.dungeon.greenInnerSouthWest,sprites.dungeon.greenInnerSouthEast,sprites.dungeon.greenOuterSouthEast,sprites.dungeon.greenOuterSouth1,sprites.dungeon.greenOuterSouthWest,sprites.dungeon.greenInnerNorthEast,sprites.dungeon.floorLight0,sprites.dungeon.stairWest,sprites.dungeon.stairNorth,sprites.dungeon.greenOuterNorthEast,sprites.dungeon.greenOuterEast0,sprites.dungeon.floorLight4,sprites.dungeon.stairLarge,sprites.dungeon.greenOuterEast1,sprites.dungeon.greenOuterSouth0,sprites.dungeon.chestClosed,sprites.dungeon.darkGroundSouthWest1,sprites.jewels.jewel3,sprites.jewels.jewel4,sprites.jewels.jewel5,sprites.jewels.jewel2], TileScale.Sixteen);
+            case "level_9":
+            case "niveau8":return tiles.createTilemap(hex`14001400020101010101010101010101010101010101010d030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a020101010101010c0101010d01010e030a0a0a0a03020101010d0a0a0a0a0a0e0a130e0302010c010503150a160e0a0a0a0a0a0e0a0a0e10030a0a0a0a030a0a0a0401010d01010e0a0a0e0a030a0a0a0a0b0a0a0a0a0a0a0e0a0a0e0a0a0e0a030a0a0a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0607090a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0709030a0a030a0a0a0a0a0a0b0a0a0b0a0a0e0a0a03030a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0a03030a0a03170f0a0a0a180e0a0a0e0a0a0e0a0a03030a0a060707070707070812120e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a0306070707070707070707070707080a0a0e0a0a030a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a0b0a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a060707070707070707070707070707070714`, img`
+22222222222222222222
+2..................2
+2..................2
+2....2222222.2222222
+2....222222.....2..2
+222.222...2.....2..2
+.2....2...2222222..2
+.2...........2..2..2
+.2....2......2..2..2
+.222..2......2..2..2
+.222..2............2
+..22..2......2..2..2
+..22..2......2..2..2
+..22..22222222222..2
+..22............2..2
+..22............2..2
+..222222222222222..2
+..2.............2..2
+................2..2
+..22222222222222222.
+`, [myTiles.tile1,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorthWest,sprites.dungeon.greenOuterWest0,sprites.dungeon.greenInnerSouthWest,sprites.dungeon.greenInnerSouthEast,sprites.dungeon.greenOuterSouthEast,sprites.dungeon.greenOuterSouth1,sprites.dungeon.greenOuterSouthWest,sprites.dungeon.greenInnerNorthEast,sprites.dungeon.floorLight0,sprites.dungeon.stairWest,sprites.dungeon.stairNorth,sprites.dungeon.greenOuterNorthEast,sprites.dungeon.greenOuterEast0,sprites.dungeon.floorLight4,sprites.dungeon.stairLarge,sprites.dungeon.greenOuterEast1,sprites.dungeon.greenOuterSouth0,sprites.dungeon.chestClosed,sprites.dungeon.darkGroundSouthWest1,sprites.jewels.jewel3,sprites.jewels.jewel4,sprites.jewels.jewel5,sprites.jewels.jewel2], TileScale.Sixteen);
+            case "level_1":
+            case "level_1":return tiles.createTilemap(hex`14001400020101010101010101010101010101010101010d030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0e030a0a0a0a020101010101010c0101010d01010e030a0a0a0a03020101010d0a0a0a0a0a0e0a130e0302010c010503150a160e0a0a0a0a0a0e0a0a0e10030a0a0a0a030a0a0a0401010d01010e0a0a0e0a030a0a0a0a0b0a0a0a0a0a0a0e0a0a0e0a0a0e0a030a0a0a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0607090a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0709030a0a030a0a0a0a0a0a0b0a0a0b0a0a0e0a0a03030a0a030a0a0a0a0a0a0e0a0a0e0a0a0e0a0a03030a0a03170f0a0a0a180e0a0a0e0a0a0e0a0a03030a0a060707070707070812120e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a03030a0a0a0a0a0a0a0a0a0a0a0a0e0a0a0e0a0a0306070707070707070707071a07080a0a0e0a0a030a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e190a0b0a0a0a0a0a0a0a0a0a0a0a0a0a110a0a0e0a0a060707070707070707070707070707070714`, img`
+22222222222222222222
+2..................2
+2..................2
+2....2222222.2222222
+2....222222.....2..2
+222.222...2.....2..2
+.2....2...2222222..2
+.2...........2..2..2
+.2....2......2..2..2
+.222..2......2..2..2
+.222..2............2
+..22..2......2..2..2
+..22..2......2..2..2
+..22..22222222222..2
+..22............2..2
+..22............2..2
+..222222222222.22..2
+..2.............2..2
+................2..2
+..22222222222222222.
+`, [myTiles.transparency16,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorthWest,sprites.dungeon.greenOuterWest0,sprites.dungeon.greenInnerSouthWest,sprites.dungeon.greenInnerSouthEast,sprites.dungeon.greenOuterSouthEast,sprites.dungeon.greenOuterSouth1,sprites.dungeon.greenOuterSouthWest,sprites.dungeon.greenInnerNorthEast,sprites.dungeon.floorLight0,sprites.dungeon.stairWest,sprites.dungeon.stairNorth,sprites.dungeon.greenOuterNorthEast,sprites.dungeon.greenOuterEast0,sprites.dungeon.floorLight4,sprites.dungeon.stairLarge,sprites.dungeon.greenOuterEast1,sprites.dungeon.greenOuterSouth0,sprites.dungeon.chestClosed,sprites.dungeon.darkGroundSouthWest1,sprites.jewels.jewel3,sprites.jewels.jewel4,sprites.jewels.jewel5,sprites.jewels.jewel2,sprites.dungeon.collectibleBlueCrystal,sprites.dungeon.stairSouth], TileScale.Sixteen);
         }
         return null;
     })

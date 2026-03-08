@@ -2,7 +2,7 @@ namespace SpriteKind {
     export const coffre = SpriteKind.create()
 }
 controller.right.onEvent(ControllerButtonEvent.Released, function () {
-    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, mySprite)
+    animation.stopAnimation(animation.AnimationTypes.All, mySprite)
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
@@ -81,7 +81,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 controller.up.onEvent(ControllerButtonEvent.Released, function () {
-    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, mySprite)
+    animation.stopAnimation(animation.AnimationTypes.All, mySprite)
 })
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
@@ -160,19 +160,18 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
-    if (mySprite.overlapsWith(mySprite2)) {
+    if (mySprite.overlapsWith(coffre1)) {
     	
     } else {
         mySprite.sayText("appuie sur A")
         if (controller.A.isPressed()) {
-            tiles.placeOnRandomTile(mySprite2, sprites.dungeon.chestClosed)
-            info.changeLifeBy(info.life())
-            info.changeLifeBy(-2)
+            tiles.placeOnRandomTile(coffre1, sprites.dungeon.chestClosed)
+            info.changeLifeBy(1)
         }
     }
 })
 controller.down.onEvent(ControllerButtonEvent.Released, function () {
-    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, mySprite)
+    animation.stopAnimation(animation.AnimationTypes.All, mySprite)
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
@@ -254,7 +253,7 @@ info.onLifeZero(function () {
     game.setGameOverMessage(false, "GAME OVER!")
 })
 controller.left.onEvent(ControllerButtonEvent.Released, function () {
-    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, mySprite)
+    animation.stopAnimation(animation.AnimationTypes.All, mySprite)
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
@@ -332,10 +331,13 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     true
     )
 })
-let mySprite2: Sprite = null
+let coffre1: Sprite = null
 let mySprite: Sprite = null
+tiles.setTilemap(tilemap`level_1`)
 mySprite = sprites.create(assets.image`mario`, SpriteKind.Player)
-mySprite2 = sprites.create(img`
+controller.moveSprite(mySprite, 100, 100)
+scene.cameraFollowSprite(mySprite)
+coffre1 = sprites.create(img`
     . b b b b b b b b b b b b b b . 
     b e 4 4 4 4 4 4 4 4 4 4 4 4 4 b 
     b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
@@ -354,22 +356,30 @@ mySprite2 = sprites.create(img`
     . b b . . . . . . . . . . b b . 
     `, SpriteKind.coffre)
 let myEnemy1 = sprites.create(img`
-    . . . . . . . . . . . c c . . . 
-    . . . . . . . c c c c 6 3 c . . 
-    . . . . . . c 6 3 3 3 3 6 c . . 
-    . . c c . c 6 c c 3 3 3 3 3 c . 
-    . b 5 5 c 6 c 5 5 c 3 3 3 3 3 c 
-    . f f 5 c 6 c 5 f f 3 3 3 3 3 c 
-    . f f 5 c 6 c 5 f f 6 3 3 3 c c 
-    . b 5 5 3 c 3 5 5 c 6 6 6 6 c c 
-    . . b 5 5 3 5 5 c 3 3 3 3 3 3 c 
-    . c c 5 5 5 5 4 c c 3 3 3 3 3 c 
-    c 5 5 4 5 5 4 c 5 5 c 3 3 3 c . 
-    b 5 4 b 4 4 4 c 5 5 5 b c c . . 
-    c 4 5 5 b 4 4 c 5 5 5 c b b . . 
-    c 5 5 5 c 4 c 5 5 5 5 c c 5 b . 
-    c 5 5 5 5 c 4 c c c c c c 5 c . 
-    . c c c c c c . . . . . c c c . 
+    ........................
+    ........................
+    ........................
+    ........................
+    ..........ffff..........
+    ........ff1111ff........
+    .......fb111111bf.......
+    .......f11111111f.......
+    ......fd11111111df......
+    ......fd11111111df......
+    ......fddd1111dddf......
+    ......fbdbfddfbdbf......
+    ......fcdcf11fcdcf......
+    .......fb111111bf.......
+    ......fffcdb1bdffff.....
+    ....fc111cbfbfc111cf....
+    ....f1b1b1ffff1b1b1f....
+    ....fbfbffffffbfbfbf....
+    .........ffffff.........
+    ...........fff..........
+    ........................
+    ........................
+    ........................
+    ........................
     `, SpriteKind.Enemy)
 let myEnemy = sprites.create(img`
     . . . . . . . . . . . c c . . . 
@@ -391,31 +401,11 @@ let myEnemy = sprites.create(img`
     `, SpriteKind.Enemy)
 myEnemy1.follow(mySprite)
 myEnemy.follow(mySprite)
-scene.cameraFollowSprite(mySprite)
-controller.moveSprite(mySprite, 100, 100)
-tiles.placeOnRandomTile(mySprite, assets.tile`baseTransparency16`)
-tiles.setTilemap(tilemap`level_1`)
+myEnemy1.setVelocity(-20, -20)
+myEnemy.setVelocity(-100, -100)
+myEnemy.setBounceOnWall(true)
+myEnemy1.setBounceOnWall(true)
 info.setLife(3)
-tiles.placeOnRandomTile(myEnemy, sprites.jewels.jewel5)
-tiles.placeOnRandomTile(myEnemy1, sprites.jewels.jewel2)
-myEnemy1.setVelocity(10, 10)
-myEnemy.setVelocity(10, 10)
-let projectile = 1
-let projectile2 = sprites.createProjectileFromSprite(img`
-    . . . b 5 b . . . . . . . . . . 
-    . . . . b 5 b . . . . . . . . . 
-    . . . . b b b b b b . . . . . . 
-    . . . b 5 5 5 5 5 b b . . . . . 
-    . . f d 5 5 f 1 d 5 b b . . . . 
-    . . c 4 d 5 f f 1 5 5 b . . . . 
-    . . 4 4 d d b f d 5 5 b . . . . 
-    b 4 4 4 4 4 5 5 5 5 5 d b b b . 
-    . b 4 4 4 4 4 5 5 d b b d d d b 
-    . . b 5 5 5 5 5 5 b 5 5 5 d b b 
-    . b 5 5 5 5 5 5 d 5 5 5 5 c d c 
-    . b 5 5 5 5 5 5 b 5 5 d c d b c 
-    . b d 5 5 5 5 5 d b c c d d c . 
-    . . b b 5 5 5 d d d d d b c . . 
-    . . . b b c c c c c c c c . . . 
-    . . . . . . . . . . . . . . . . 
-    `, myEnemy, 50, 50)
+tiles.placeOnRandomTile(myEnemy, sprites.jewels.jewel2)
+tiles.placeOnRandomTile(myEnemy1, sprites.jewels.jewel5)
+tiles.placeOnRandomTile(mySprite, sprites.dungeon.collectibleBlueCrystal)
